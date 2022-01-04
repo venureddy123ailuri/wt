@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function display()
+{
+ document.write("Hello!CSEB");
+ document.write("i am user defined function");
+}
+function show()
+{
+ document.write("i am show() activated through mouse over event");
+}
+function display(a,b)
+{
+document.write("a is "+a);
+document.write("<br>");
+document.write("b is "+b);
+}
+function add(a,b)
+{
+c=a+b;
+window.alert(c);
+}
+</script>
+</head>
+<body>
+<p onmouseover="show()">place the mouse here! and call show()</p>
+<h6 onmouseout="display(12,23)">remove mouse and call display()</h6>
+<input type="button" value="click to call add()" onclick="add(94,89)">
+<h1 onclick="add(40,80)">add function with 40 and 80</h1>
+</body>
+</html>
