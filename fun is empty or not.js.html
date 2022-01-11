@@ -1,0 +1,39 @@
+<html>
+<head>
+<script>
+function readValues()
+{
+//read name from the form
+stu_name=form_reg.name.value;
+//read password from the form and store in the variable
+stu_password=document.form_reg.pwd.value;
+//check the name field is empty or not
+if(stu_name==""||stu_name==null)
+{
+alert("pleae enter a name");
+}
+else
+{
+//check password is empyt or not
+if(stu_password==""||stu_password==null)
+{
+alert("enter a password");
+}//if
+else
+{
+document.write("welcome<br>")
+document.write(stu_name);
+}//inner else
+}
+}//function
+</script>
+</head>
+<body>
+<form name="form_reg" action="serveraddress">
+name:<input type="text" name="name" value="cse"><br>
+password<input type="password" name="pwd" value="123456"><br>
+<input type="button" value="click here" onclick="readValues()">
+</form>
+</body>
+ </html> 
+ 
